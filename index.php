@@ -9,7 +9,7 @@
     </head>
 
     
-    <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,6 +63,49 @@
             <p>No posts found. :(</p>
  
         <?php endif; ?>
+
+        <hr>
+
+        <?php 
+        $loop = new WP_Query( array( 'post_type' => 'review', 'posts_per_page' => 10 ) ); 
+
+        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+            <div class="row mb-5">
+                <div class="col-12 col-md-2 offset-md-1 d-flex flex-column align-items-center">
+                <img 
+                    class="book-img mb-2"
+                    src="<?php echo get_the_post_thumbnail_url(); ?>"
+                    alt="Book Image"
+                />
+                </div>
+
+                <div class="col-12 offset-md-1 col-md-6 text-center text-md-start">
+                <h3 class="item-heading">
+                    <span class="book-item-name">
+                    <?php the_title(); ?> 
+                    </span>
+
+                    <!-- render name onto page -->
+                    <span class="book-author"> 
+                        <?php echo get_post_meta($post->ID, 'author', true); ?>
+                    </span>
+                </h3>
+
+                <p class="excerpt mt-3">
+                    <?php the_excerpt(); ?>
+                </p>
+                </div>
+            </div>
+
+    <?php endwhile; ?>
+
+
+    <hr>
+
+
+
+        
         <?php wp_footer(); ?>
     </body>
 
