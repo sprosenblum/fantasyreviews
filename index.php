@@ -5,7 +5,7 @@
         <h1 class="text-center mt-3">
             <?php bloginfo( 'name' ); ?>
         </h1>
-        
+
         <h2 class="text-center mt-3">
             <?php bloginfo( 'description' ); ?>
         </h2>
@@ -35,10 +35,10 @@
                             </a>
                         </span>
 
-                        <!-- render name onto page -->
-                        <span class="book-author"> 
+                        <!-- render author name onto page -->
+                        <p class="book-author mt-2 fs-5"> 
                             <?php echo get_post_meta($post->ID, 'author', true); ?>
-                        </span>
+                        </p>
                     </h3>
 
                     <p class="excerpt mt-3">
