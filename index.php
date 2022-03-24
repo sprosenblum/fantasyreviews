@@ -2,38 +2,15 @@
 
 
     <body>
-        <h1><?php bloginfo( 'name' ); ?></h1>
-        <h2><?php bloginfo( 'description' ); ?></h2>
- 
-        <?php if ( have_posts() ) : 
-            while ( have_posts() ) : the_post(); ?>
- 
-                <h3><?php the_title(); ?></h3>
+        <h1 class="text-center mt-3">
+            <?php bloginfo( 'name' ); ?>
+        </h1>
         
-                <?php 
-                the_content(); 
-                wp_link_pages();
-                edit_post_link(); ?>
+        <h2 class="text-center mt-3">
+            <?php bloginfo( 'description' ); ?>
+        </h2>
  
-        <?php endwhile; ?>
- 
-        <?php
-        if ( get_next_posts_link() ) {
-            next_posts_link();
-        }
-        ?>
-        <?php
-            if ( get_previous_posts_link() ) {
-                previous_posts_link();
-            }
-        ?>
- 
-        <?php else: ?>
- 
-            <p>No posts found. :(</p>
- 
-        <?php endif; ?>
-
+        
         <hr>
 
         <?php 
@@ -51,20 +28,22 @@
                 </div>
 
                 <div class="col-12 offset-md-1 col-md-6 text-center text-md-start">
-                <h3 class="item-heading">
-                    <span class="book-item-name">
-                    <?php the_title(); ?> 
-                    </span>
+                    <h3 class="item-heading">
+                        <span class="book-item-name">
+                            <a href="<?php the_permalink(); ?>">
+                            <?php the_title(); ?> 
+                            </a>
+                        </span>
 
-                    <!-- render name onto page -->
-                    <span class="book-author"> 
-                        <?php echo get_post_meta($post->ID, 'author', true); ?>
-                    </span>
-                </h3>
+                        <!-- render name onto page -->
+                        <span class="book-author"> 
+                            <?php echo get_post_meta($post->ID, 'author', true); ?>
+                        </span>
+                    </h3>
 
-                <p class="excerpt mt-3">
-                    <?php the_excerpt(); ?>
-                </p>
+                    <p class="excerpt mt-3">
+                        <?php the_excerpt(); ?>
+                    </p>
                 </div>
             </div>
 
