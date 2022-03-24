@@ -13,6 +13,11 @@
                     <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'fantasyreviews' ); ?></p>
  
                     <?php get_search_form(); ?>
+
+                    <button type="button" class="mt-5 btn btn-dark">
+                        <a href="<?php echo home_url(); ?>" class="">Return Home</a>
+                    </button>
+
                 </div><!-- .page-content -->
             </div><!-- .page-wrapper -->
  
