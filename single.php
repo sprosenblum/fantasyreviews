@@ -24,7 +24,7 @@
 
                     <button type="button" class="btn btn-dark">
                         <!-- @todo convert to standard slash before publishing -->
-                        <a href="/bookreviews" class="">Return Home</a>
+                        <a href="<?php echo home_url(); ?>" class="">Return Home</a>
                     </button>
 
            
