@@ -10,9 +10,13 @@
             <div class="single_excerpt">
                 <h1 class="">
                     <?php the_title(); ?>
+                    <p class="">
+                        <?php echo get_post_meta($post->ID, 'author', true); ?>
+                    </p>
                 </h1>
                     <?php the_content(); ?>
             </div>
+
 
         <?php endwhile; ?>
 
