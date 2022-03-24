@@ -19,8 +19,8 @@
         <?php endwhile; ?>
 
     <?php endif; ?>
+    
     <hr>
-
 
 
         
