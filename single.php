@@ -3,8 +3,9 @@
 <div class="container">
 
     <body>
-        <?php
-     
+
+    <?php
+
     if(have_posts()) : ?>
 
         <?php while(have_posts())  : the_post(); ?>
@@ -26,18 +27,16 @@
                         <a href="<?php echo home_url(); ?>" class="">Return Home</a>
                     </button>
 
-           
-
 
         <?php endwhile; ?>
 
     <?php endif; ?>
-    
+
     <hr>
 
 
-        
-        <?php wp_footer(); ?>
+    <?php wp_footer(); ?>
+
     </body>
 
     </html>
