@@ -9,18 +9,18 @@
         <h2 class="text-center mt-3">
             <?php bloginfo( 'description' ); ?>
         </h2>
- 
-        
+
+
         <hr>
 
-        <?php 
-        $loop = new WP_Query( array( 'post_type' => 'review', 'posts_per_page' => 10 ) ); 
+        <?php
+        $loop = new WP_Query( array( 'post_type' => 'review', 'posts_per_page' => 10 ) );
 
         while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
             <div class="row mb-5">
                 <div class="col-12 col-md-2 offset-md-1 d-flex flex-column align-items-center">
-                <img 
+                <img
                     class="book-img mb-2"
                     src="<?php echo get_the_post_thumbnail_url(); ?>"
                     alt="Book Image"
@@ -29,16 +29,16 @@
 
                 <div class="col-12 offset-md-1 col-md-6 text-center text-md-start">
                     <h3 class="item-heading">
-                        
+
                         <span class="book-item-name">
                             <a href="<?php the_permalink(); ?>">
-                            <?php the_title(); ?> 
+                            <?php the_title(); ?>
                             </a>
                         </span>
 
                             <!-- render author name onto page -->
-                        <p class="book-author mt-2 fs-5"> 
-                            <?php echo get_post_meta($post->ID, 'author', true); ?> 
+                        <p class="book-author mt-2 fs-5">
+                            <?php echo get_post_meta($post->ID, 'author', true); ?>
                         </p>
 
                     </h3>
@@ -50,12 +50,18 @@
                 </div>
             </div>
 
+            <!-- working here on post pagination to make it work -->
+            <?php the_posts_pagination(
+                array(
+                    'mid_size' => 5
+                    ) ); ?>
+
     <?php endwhile; ?>
 
 
     <hr>
 
-        
+
         <?php wp_footer(); ?>
     </body>
 
