@@ -3,7 +3,7 @@
 function fantasyreviews_register_styles() {
 
     wp_register_style(
-        'Bootstrap_5', 
+        'Bootstrap_5',
         'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css'
     );
 
@@ -33,3 +33,5 @@ function reviews_excerpt_more( $more ) {
     return ' <a href="'.get_the_permalink().'" rel="nofollow"> read more...</a>';
 }
 add_filter( 'excerpt_more', 'reviews_excerpt_more' );
+
+//ini_set( 'mysql.trace_mode', 0 );
