@@ -26,12 +26,8 @@ function fantasyreviews_setup_theme() {
 add_action('after_setup_theme', 'fantasyreviews_setup_theme');
 
 
-//add_post_type_support( 'review', 'excerpt' );
-
-
 function reviews_excerpt_more( $more ) {
     return ' <a href="'.get_the_permalink().'" rel="nofollow"> read more...</a>';
 }
 add_filter( 'excerpt_more', 'reviews_excerpt_more' );
 
-//ini_set( 'mysql.trace_mode', 0 );
