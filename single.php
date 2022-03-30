@@ -10,7 +10,7 @@
 
         <?php while(have_posts())  : the_post(); ?>
 
-            <div class="row mb-5">
+            <div class="row mb-5 mt-5">
                         <div class="col-12 col-md-2 offset-md-1 d-flex flex-column align-items-center">
                         <img
                             class="book-img mb-2"
@@ -39,9 +39,9 @@
 
                         </div>
                 </div>
-                        <button type="button" class="btn btn-dark">
-                            <a href="<?php echo home_url(); ?>" class="">Return Home</a>
-                        </button>
+                        <div class="text-center">
+                            <a href="<?php echo home_url(); ?>" class="btn btn-dark">Return Home</a>
+                        </div>
 
             </div>
 
