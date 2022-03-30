@@ -4,10 +4,26 @@
 * A Simple Category Template
 */
 
-get_header(); ?>
+get_header();
+
+//$category = get_category( get_query_var( 'cat' ) );
+//$cat_id = $category->cat_ID;
+//$category_id = get_cat_ID('Category Name');
+
+?>
 
 <section id=”primary” class=”site-content”>
     <div id=”content” role=”main”>
+
+
+    <p>Category: <?php single_cat_title(); ?></p>
+
+    <?php if (is_category('Category A')) : ?>
+        <p>This is the text to describe category A</p>
+    <?php else (is_category('Category B')) : ?>
+        <p>This is the text to describe category B</p>
+    <?php endif; ?>
+
     <?php
     // Check if there are any posts to display
     if ( have_posts() ) : ?>

@@ -24,10 +24,10 @@
                     <a class="nav-link" href="<?php ?>">Authors</a>
 
                     <a class="nav-link" href="
-                        <?php ?>
+                        <?php get_the_category_rss('young_adult'); ?>
                         ">Young-Adult</a>
 
-                    <a class="nav-link" href="<?php ?>">Adult</a>
+                    <a class="nav-link" href="<?php get_the_category_rss('adult');?>">Adult</a>
                 </div>
             </div>
         </div>
