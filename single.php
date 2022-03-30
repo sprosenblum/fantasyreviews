@@ -10,22 +10,40 @@
 
         <?php while(have_posts())  : the_post(); ?>
 
-            <div class="single_excerpt row">
-                <h1 class="mt-3 fs-2 text-center">
-                    <?php the_title(); ?>
-                    <p class="mt-3 fs-4 text-center">
-                        <?php echo get_post_meta($post->ID, 'author', true); ?>
-                    </p>
-                </h1>
+            <div class="row mb-5">
+                        <div class="col-12 col-md-2 offset-md-1 d-flex flex-column align-items-center">
+                        <img
+                            class="book-img mb-2"
+                            src="<?php echo get_the_post_thumbnail_url(); ?>"
+                            alt="Book Image"
+                        />
+                        </div>
 
-                <div class="offset-2 col-9">
-                    <p>
-                        <?php the_content(); ?>
-                    </p>
+                        <div class="col-12 offset-md-1 col-md-6 text-center text-md-start">
+                            <h3 class="item-heading">
 
-                    <button type="button" class="btn btn-dark">
-                        <a href="<?php echo home_url(); ?>" class="">Return Home</a>
-                    </button>
+                                <span class="book-item-name">
+                                    <?php the_title(); ?>
+                                </span>
+
+                                    <!-- render author name onto page -->
+                                <p class="book-author mt-2 fs-5">
+                                    <?php echo get_post_meta($post->ID, 'author', true); ?>
+                                </p>
+
+                            </h3>
+
+                            <p class="mt-3">
+                                <?php the_content(); ?>
+                            </p>
+
+                        </div>
+                </div>
+                        <button type="button" class="btn btn-dark">
+                            <a href="<?php echo home_url(); ?>" class="">Return Home</a>
+                        </button>
+
+            </div>
 
 
         <?php endwhile; ?>
