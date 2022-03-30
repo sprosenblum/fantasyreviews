@@ -16,10 +16,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    <a class="nav-link" href="#">Authors</a>
-                    <a class="nav-link" href="#">Young-Adult</a>
-                    <a class="nav-link" href="#">Adult</a>
+
+                    <a class="nav-link active" aria-current="page" href="
+                        <?php home_url(); ?>
+                        ">Home</a>
+
+                    <a class="nav-link" href="<?php ?>">Authors</a>
+
+                    <a class="nav-link" href="
+                        <?php ?>
+                        ">Young-Adult</a>
+
+                    <a class="nav-link" href="<?php ?>">Adult</a>
                 </div>
             </div>
         </div>
