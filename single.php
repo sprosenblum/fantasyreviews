@@ -6,6 +6,7 @@
 
     <?php
 
+
     if(have_posts()) : ?>
 
         <?php while(have_posts())  : the_post(); ?>
@@ -36,6 +37,23 @@
                             <p class="mt-3">
                                 <?php the_content(); ?>
                             </p>
+
+
+                                <?php
+                                    $category = get_the_category(get_post_meta($post->ID, 'category'));
+
+                                    if ($category && $category[0]) { ?>
+
+                                        <p class="single-category">
+                                        Category:
+
+                                    <?php print_r( $category[0]->name ); ?>
+                                    </p>
+                                    <?php }
+                                ?>
+
+
+
 
                         </div>
                 </div>

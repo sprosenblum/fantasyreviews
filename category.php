@@ -6,9 +6,9 @@
 
 get_header();
 
-//$category = get_category( get_query_var( 'cat' ) );
-//$cat_id = $category->cat_ID;
-//$category_id = get_cat_ID('Category Name');
+$category = get_category( get_query_var( 'cat' ) );
+$cat_id = $category->cat_ID;
+echo $cat_id;
 
 ?>
 
@@ -18,10 +18,13 @@ get_header();
 
     <p>Category: <?php single_cat_title(); ?></p>
 
-    <?php if (is_category('Category A')) : ?>
-        <p>This is the text to describe category A</p>
-    <?php else (is_category('Category B')) : ?>
-        <p>This is the text to describe category B</p>
+    <?php if (is_category('children')) : ?>
+        <p>Children</p>
+    <?php else (is_category('young_adult')) : ?>
+        <p>Young-Adult</p>
+    <?php elseif (is_category('adult')) : ?>
+        <p>Adult</p>
+
     <?php endif; ?>
 
     <?php
