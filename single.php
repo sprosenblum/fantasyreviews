@@ -47,9 +47,10 @@
                                         <p class="single-category">
                                         Category:
 
-                                    <?php print_r( $category[0]->name ); ?>
-                                    </p>
+                                        <?php print_r( $category[0]->name ); ?>
+                                        </p>
                                     <?php }
+
                                 ?>
 
 

@@ -60,10 +60,6 @@ echo $cat_id;
             <div class=”entry”>
                 <?php the_excerpt(); ?>
 
-                <p class=”postmetadata”><?php
-                comments_popup_link( ‘No comments yet’, ‘1 comment’, ‘% comments’, ‘comments-link’, ‘Comments closed’); ?>
-                </p>
-
             </div>
 
         <?php endwhile; // End Loop

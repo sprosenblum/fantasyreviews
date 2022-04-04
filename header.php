@@ -18,16 +18,29 @@
                 <div class="navbar-nav">
 
                     <a class="nav-link active" aria-current="page" href="
-                        <?php home_url(); ?>
-                        ">Home</a>
+                            <?php echo home_url(); ?>
+                            ">Home
+                    </a>
 
-                    <a class="nav-link" href="<?php ?>">Children</a>
 
-                    <a class="nav-link" href="
-                        <?php get_the_category_rss('young_adult'); ?>
-                        ">Young-Adult</a>
+                    <a class="nav-link active" href="
+                                <?php get_category_by_slug('children'); ?>
+                                ">Children
+                    </a>
 
-                    <a class="nav-link" href="<?php get_the_category_rss('adult');?>">Adult</a>
+
+                    <a class="nav-link active" href="
+                            <?php  ?>
+                        ">Young-Adult
+                    </a>
+
+
+                    <a class="nav-link active" href="
+                            <?php ?>
+                            ">Adult
+                    </a>
+
+
                 </div>
             </div>
         </div>

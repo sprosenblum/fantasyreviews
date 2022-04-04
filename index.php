@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php get_header();
+
+?>
 
     <body>
         <h1 class="text-center mt-3">
@@ -13,6 +15,14 @@
         <hr>
 
         <?php
+
+        echo '<pre>';
+
+        print_r(get_category_by_slug('young_adult'));
+
+        echo '</pre>';
+
+
 
         $loop = new WP_Query( array(
             'post_type' => 'review',
