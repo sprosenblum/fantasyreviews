@@ -23,6 +23,8 @@
 
                     <a class="nav-link" href="<?php ?>">Authors</a>
 
+                    <a class="nav-link" href="<?php ?>">Children</a>
+
                     <a class="nav-link" href="
                         <?php get_the_category_rss('young_adult'); ?>
                         ">Young-Adult</a>
