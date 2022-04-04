@@ -21,8 +21,6 @@
                         <?php home_url(); ?>
                         ">Home</a>
 
-                    <a class="nav-link" href="<?php ?>">Authors</a>
-
                     <a class="nav-link" href="<?php ?>">Children</a>
 
                     <a class="nav-link" href="
