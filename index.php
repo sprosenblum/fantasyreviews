@@ -16,12 +16,6 @@
 
         <?php
 
-        echo '<pre>';
-
-        print_r(get_category_by_slug('young_adult'));
-
-        echo '</pre>';
-
 
 
         $loop = new WP_Query( array(

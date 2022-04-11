@@ -1,5 +1,7 @@
 <?php
 
+get_header();
+
 /**
 * Template Name: Category Custom Page
 */
@@ -53,4 +55,3 @@ get_header(); ?>
 </div><!-- .content-area -->
 
 <?php get_footer(); ?>
-
