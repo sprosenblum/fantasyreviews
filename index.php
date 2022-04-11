@@ -7,7 +7,7 @@
             <?php bloginfo( 'name' ); ?>
         </h1>
 
-        <h2 class="text-center mt-3">
+        <h2 class="text-center mt-3 ">
             <?php bloginfo( 'description' ); ?>
         </h2>
 
@@ -58,11 +58,7 @@
 
                     </div>
                 </div>
-
-
         <?php endwhile; ?>
-
-
 </div>
 
 
