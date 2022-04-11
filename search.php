@@ -1,33 +1,32 @@
 <?php get_header(); ?>
 
-    <section id="primary" class="content-area">
-        <main id="main" class="site-main">
+<div class="search-result">
+    <div class="container">
+        <div class="row">
+            <div class="search">
+                <?php if (have_posts()) : ?>
 
-        <?php if ( have_posts() ) : ?>
+                    <h2>Search Result For: <?php the_search_query(); ?></h2>
+                    <div class="light-separator small center"></div>
 
-            <header class="page-header">
-                <h1 class="page-title"><?php
-                    /* translators: %s: search query. */
-                    printf( esc_html__( 'Search Results for: %s', 'materialpress' ), '<span>' . get_search_query() . '</span>' );
-                ?></h1>
-            </header><!-- .page-header -->
+                    <?php
+                    while (have_posts()) : the_post();
 
-            <?php
-            while ( have_posts() ) : the_post();
-                /* Make sure the template is your content.php */
-                get_template_part('content');
+                    get_template_part('content-search', get_post_format());
 
-            endwhile;
+                    endwhile;
+                    else :
+                        echo '
+                        <div class="no-content">
+                            <h3>Ooopss, looks like nothing matches your result.</h3>
+                        </div>';
+                    endif;
+                ?>
+                <div class="search-form"><?php get_search_form(); ?></div>
+            </div>
+        </div>
+    </div>
+</div>
 
-            the_posts_navigation();
 
-        else :
-            /* Show no content found page */
-            echo 'Not posts found';
-
-        endif; ?>
-
-        </main><!-- #main -->
-    </section><!-- #primary -->
-
-<?php get_footer();
+ <?php get_footer(); ?>

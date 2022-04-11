@@ -11,7 +11,17 @@ get_header(); ?>
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
+    <hr>
+
     <?php
+
+
+
+    ?>
+
+
+
+<?php
     $paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
     $args = array(
         'post_type' => 'reviews',
