@@ -17,12 +17,12 @@
                     endwhile;
                 else :
                     echo '
-                    <div class="no-content">
+                    <div class="no-content mt-3 text-center">
                         <h3>Oops, looks like nothing matches your result.</h3>
                     </div>';
                 endif;
                 ?>
-                <div class="search-form">
+                <div class="search-form mt-3 text-center">
                     <?php get_search_form(); ?>
                 </div>
             </div>
