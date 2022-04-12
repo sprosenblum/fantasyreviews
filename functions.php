@@ -31,3 +31,10 @@ function reviews_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'reviews_excerpt_more' );
 
+function wpd_search_template( $template ) {
+    if( ! have_posts() ) {
+        $template = locate_template( array( '404.php' ) );
+    }
+    return $template;
+}
+add_filter( 'search_template', 'wpd_search_template' );
