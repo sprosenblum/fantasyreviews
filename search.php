@@ -5,7 +5,6 @@
         <div class="row">
             <div class="search">
                 <?php if (have_posts()) : ?>
-
                         <h2>Search Result For: <?php the_search_query(); ?></h2>
                         <div class="light-separator small center"></div>
 
@@ -22,7 +21,9 @@
                             </div>';
                     endif;
                 ?>
-                <div class="search-form"><?php get_search_form(); ?></div>
+                <div class="search-form">
+                    <?php get_search_form(); ?>
+                </div>
             </div>
         </div>
     </div>
