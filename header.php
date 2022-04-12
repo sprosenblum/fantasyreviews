@@ -24,7 +24,7 @@
 
 
                     <a class="nav-link active" href="
-                                <?php get_category_by_slug('children'); ?>
+                                <?php //get_category_by_slug('children'); ?>
                                 ">Children
                     </a>
 
@@ -45,9 +45,11 @@
             </div>
         </div>
 
-        <form class="d-flex ">
+        <div class="d-flex justify-content-center">
+            <form>
                 <?php get_search_form(); ?>
             </form>
+        </div>
 
     </nav>
 
