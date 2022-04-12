@@ -7,7 +7,7 @@
             <?php bloginfo( 'name' ); ?>
         </h1>
 
-        <h2 class="text-center mt-3 ">
+        <h2 class="text-center mt-3 fs-4 text">
             <?php bloginfo( 'description' ); ?>
         </h2>
 
