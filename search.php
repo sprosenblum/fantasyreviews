@@ -20,10 +20,14 @@
                     <div class="no-content mt-3 text-center">
                         <h3>Oops, looks like nothing matches your result.</h3>
                     </div>';
+
                 endif;
                 ?>
                 <div class="search-form mt-3 text-center">
                     <?php get_search_form(); ?>
+                    <div class="text-center mt-3">
+                        <a href="<?php echo home_url(); ?>" class="btn btn-dark">Return Home</a>
+                    </div>
                 </div>
             </div>
         </div>
