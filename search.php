@@ -5,7 +5,7 @@
         <div class="row">
             <div class="search">
                 <?php
-                if (have_posts()) : ?>
+                if (have_posts() && $_GET['s'] != '') : ?>
                     <h2>Search Result For: <?php the_search_query(); ?></h2>
                     <div class="light-separator small center"></div>
 
