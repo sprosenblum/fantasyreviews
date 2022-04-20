@@ -24,7 +24,7 @@
 
 
                     <a class="nav-link active" href="
-                                <?php //get_category_by_slug('children'); ?>
+                                <?php  ?>
                                 ">Children
                     </a>
 
