@@ -14,24 +14,17 @@ get_header(); ?>
     <hr>
 
     <?php
-    // $loop = new WP_Query( array(
-    //         'post_type' => 'review',
-    //         'cat_id' => '2'
-    //     ) );
 
+    $args = array( 'category' => 2, 'post_type' =>  'review' );
+    $postslist = get_posts( $args );
+
+    foreach ($postslist as $post) :  setup_postdata($post); ?>
+
+        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        <?php the_excerpt(); ?>
+    <?php
+    endforeach;
     ?>
-
-
-    <ul class="young-adult-posts">
-	<?php query_posts('cat=2');
-
-    while (have_posts()) : the_post(); ?>
-		<li><a href='<?php the_permalink() ?>'><?php the_title(); ?></a></li>
-	<?php
-    endwhile; ?>
-
-    	<?php wp_reset_query(); ?>
-    </ul>
 
 
     </main><!-- .site-main -->
