@@ -15,7 +15,20 @@ get_header(); ?>
 
     <?php
 
-    $args = array( 'category' => 2, 'post_type' =>  'review' );
+    $categoryId = get_query_var('category');
+    // Test if the query exists at the URL
+    if ( !$categoryId ) {
+
+        // if category is NOT set redirect to 404 page
+        wp_redirect('/bookreviews/404');
+
+        exit;
+
+    }
+
+
+
+    $args = array( 'category' => $categoryId, 'post_type' =>  'review' );
     $postslist = get_posts( $args );
 
     foreach ($postslist as $post) :  setup_postdata($post); ?>
@@ -25,6 +38,14 @@ get_header(); ?>
     <?php
     endforeach;
     ?>
+
+    <hr>
+
+    <?php
+
+
+
+?>
 
 
     </main><!-- .site-main -->

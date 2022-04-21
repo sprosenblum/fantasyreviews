@@ -30,3 +30,22 @@ function reviews_excerpt_more( $more ) {
     return ' <a href="'.get_the_permalink().'" rel="nofollow"> read more...</a>';
 }
 add_filter( 'excerpt_more', 'reviews_excerpt_more' );
+
+
+
+function add_get_val() {
+    global $wp;
+    $wp->add_query_var('category');
+}
+
+add_action('init','add_get_val');
+
+
+
+function do_output_buffer() {
+    ob_start();
+}
+
+add_action('init', 'do_output_buffer');
+
+?>
