@@ -24,19 +24,19 @@
 
 
                     <a class="nav-link active" href="
-                                <?php  ?>
-                                ">Children
+                            /bookreviews/category-custom-page/?category=4
+                            ">Children
                     </a>
 
 
                     <a class="nav-link active" href="
-                            <?php  ?>
-                        ">Young-Adult
+                            /bookreviews/category-custom-page/?category=2
+                            ">Young-Adult
                     </a>
 
 
                     <a class="nav-link active" href="
-                            <?php ?>
+                            /bookreviews/category-custom-page/?category=3
                             ">Adult
                     </a>
 
