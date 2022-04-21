@@ -46,14 +46,12 @@
 
                                         <p class="single-category">
                                         Category:
-                                            <a href="">
+                                            <a href="/bookreviews/category-custom-page/?category=<?php echo $category[0]->term_id; ?>
+                                            ">
                                                 <?php print_r( $category[0]->name ); ?>
                                             </a>
                                         </p>
-                                    <?php }
-
-                                ?>
-
+                                    <?php } ?>
 
                         </div>
                 </div>
