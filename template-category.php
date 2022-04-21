@@ -46,12 +46,6 @@ get_header(); ?>
 
     <hr>
 
-    <?php
-
-
-
-?>
-
 
     </main><!-- .site-main -->
 </div><!-- .content-area -->
