@@ -46,14 +46,13 @@
 
                                         <p class="single-category">
                                         Category:
-
-                                        <?php print_r( $category[0]->name ); ?>
+                                            <a href="">
+                                                <?php print_r( $category[0]->name ); ?>
+                                            </a>
                                         </p>
                                     <?php }
 
                                 ?>
-
-
 
 
                         </div>

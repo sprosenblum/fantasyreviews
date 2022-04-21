@@ -6,7 +6,7 @@ get_header();
 * Template Name: Category Custom Page
 */
 
-get_header(); ?>
+?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
@@ -33,6 +33,7 @@ get_header(); ?>
 
     foreach ($postslist as $post) :  setup_postdata($post); ?>
 
+        <!-- add styling -->
         <h2>
             <a href="<?php the_permalink(); ?>">
                 <?php the_title(); ?>
