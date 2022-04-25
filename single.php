@@ -7,9 +7,9 @@
     <?php
 
 
-    if(have_posts()) : ?>
+    if(have_posts()) :
 
-        <?php while(have_posts())  : the_post(); ?>
+        while(have_posts())  : the_post(); ?>
 
             <div class="row mb-5 mt-5">
                         <div class="col-12 col-md-2 offset-md-1 d-flex flex-column align-items-center">
