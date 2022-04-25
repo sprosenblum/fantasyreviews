@@ -17,13 +17,15 @@
                         alt="Book Image"
                     />
                 </div>
-            </div>
+
 
                 <div class="col-12 offset-md-1 col-md-6 text-center text-md-start">
                     <h3 class="item-heading">
 
                         <span class="book-item-name">
-                            <?php the_title(); ?>
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_title(); ?>
+                            </a>
                         </span>
 
                         <!-- render author name onto page -->
@@ -53,7 +55,7 @@
                         <?php } ?>
                 </div>
 
-                <div class="text-center">
+                <div class="text-center mb-3">
                     <a href="<?php echo home_url(); ?>" class="btn btn-dark">Return Home</a>
                 </div>
 
