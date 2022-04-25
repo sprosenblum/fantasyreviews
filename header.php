@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        <div class="d-flex justify-content-center">
+        <div class="">
             <form>
                 <?php get_search_form(); ?>
             </form>
