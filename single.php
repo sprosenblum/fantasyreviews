@@ -55,7 +55,7 @@
                         <?php } ?>
                 </div>
 
-                <div class="text-center mb-3">
+                <div class="text-center mt-5 mb-3">
                     <a href="<?php echo home_url(); ?>" class="btn btn-dark">Return Home</a>
                 </div>
 
