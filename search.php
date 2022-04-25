@@ -26,7 +26,7 @@
 
                 <div class="search-form mt-3 text-center">
                     <?php get_search_form(); ?>
-                    <div class="text-center mt-3">
+                    <div class="text-center mt-5">
                         <a href="<?php echo home_url(); ?>" class="btn btn-dark">Return Home</a>
                     </div>
 

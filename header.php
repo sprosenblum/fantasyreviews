@@ -45,11 +45,10 @@
             </div>
         </div>
 
-        <div class="">
-            <form>
+
+            <form class="d-flex">
                 <?php get_search_form(); ?>
             </form>
-        </div>
 
     </nav>
 
