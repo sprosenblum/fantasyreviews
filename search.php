@@ -6,7 +6,7 @@
             <div class="search text-center">
                 <?php
                 if (have_posts() && $_GET['s'] != '') : ?>
-                    <h2>Search Result For: <?php the_search_query(); ?></h2>
+                    <h2 class="mt-3 mb-3">Search Result For: <?php the_search_query(); ?></h2>
                     <div class="light-separator small center"></div>
 
                     <?php
