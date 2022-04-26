@@ -3,7 +3,7 @@
 <div class="search-result">
     <div class="container">
         <div class="row">
-            <div class="search">
+            <div class="search text-center">
                 <?php
                 if (have_posts() && $_GET['s'] != '') : ?>
                     <h2>Search Result For: <?php the_search_query(); ?></h2>
@@ -24,9 +24,9 @@
                 endif;
                 ?>
 
-                <div class="search-form mt-3 text-center">
-                    <?php get_search_form(); ?>
-                    <div class="text-center mt-5">
+                <!-- <div class="search-form mt-3 text-center">
+                    <?php //get_search_form(); ?>
+                    <div class="text-center mt-5"> -->
                         <a href="<?php echo home_url(); ?>" class="btn btn-dark">Return Home</a>
                     </div>
 
