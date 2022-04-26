@@ -46,9 +46,11 @@
         </div>
 
 
+        <div class="col-sm-3">
             <form class="d-flex">
                 <?php get_search_form(); ?>
             </form>
+        </div>
 
     </nav>
 
