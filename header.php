@@ -40,16 +40,14 @@
                             ">Adult
                     </a>
 
+                    <form class="d-flex" method="get" action="<?php echo home_url( '/' ); ?>">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="s">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+
 
                 </div>
             </div>
-        </div>
-
-
-        <div class="col-sm-3">
-            <form class="d-flex">
-                <?php get_search_form(); ?>
-            </form>
         </div>
 
     </nav>
