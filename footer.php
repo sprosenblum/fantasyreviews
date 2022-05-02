@@ -8,15 +8,15 @@
     <div class="row text-center d-flex justify-content-center pt-5">
         <!-- Grid column -->
         <div class="col-md-2">
-        <h6 class="text-uppercase font-weight-bold">
-            <a href="#!" class="text-white">About us</a>
+        <h6 class="font-weight-bold">
+            <a href="#!" class="text-white">About</a>
         </h6>
         </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
         <div class="col-md-2">
-        <h6 class="text-uppercase font-weight-bold">
+        <h6 class="font-weight-bold">
             <a href="#!" class="text-white">Products</a>
         </h6>
         </div>
@@ -24,7 +24,7 @@
 
         <!-- Grid column -->
         <div class="col-md-2">
-        <h6 class="text-uppercase font-weight-bold">
+        <h6 class="font-weight-bold">
             <a href="#!" class="text-white">Awards</a>
         </h6>
         </div>
@@ -32,7 +32,7 @@
 
         <!-- Grid column -->
         <div class="col-md-2">
-        <h6 class="text-uppercase font-weight-bold">
+        <h6 class="font-weight-bold">
             <a href="#!" class="text-white">Help</a>
         </h6>
         </div>
@@ -40,7 +40,7 @@
 
         <!-- Grid column -->
         <div class="col-md-2">
-        <h6 class="text-uppercase font-weight-bold">
+        <h6 class="font-weight-bold">
             <a href="#!" class="text-white">Contact</a>
         </h6>
         </div>
