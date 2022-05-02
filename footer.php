@@ -1,43 +1,69 @@
-<footer class="">
-        <div class="row">
-        	<div class="col-md-3">
-                <p class="fs-6">
-                    ©<?php echo date("Y"); ?>
-                    Fantasy Reviews
-                </p>
-            </div>
-        	<div class="col-md-4">
-            	<h4>Menu</h4>
-            	<div class="col-md-6">
-
-                    <a class="nav-link active" aria-current="page" href="
-                            <?php echo home_url(); ?>
-                            ">Home
-                    </a>
-
-                    <a class="nav-link active" href=
-                            "/bookreviews/category-custom-page/?category=4">
-                            Children
-                    </a>
-
-
-                    <a class="nav-link active" href=
-                            "/bookreviews/category-custom-page/?category=2">
-                            Young-Adult
-                    </a>
-
-
-                    <a class="nav-link active" href=
-                            "/bookreviews/category-custom-page/?category=3">
-                            Adult
-                    </a>
-
-
-                </div>
-            </div>
+<!-- Footer -->
+<footer class="text-center text-white" style="background-color: #3f51b5">
+<!-- Grid container -->
+<div class="container">
+    <!-- Section: Links -->
+    <section class="mt-5">
+    <!-- Grid row-->
+    <div class="row text-center d-flex justify-content-center pt-5">
+        <!-- Grid column -->
+        <div class="col-md-2">
+        <h6 class="text-uppercase font-weight-bold">
+            <a href="#!" class="text-white">About us</a>
+        </h6>
         </div>
+        <!-- Grid column -->
 
+        <!-- Grid column -->
+        <div class="col-md-2">
+        <h6 class="text-uppercase font-weight-bold">
+            <a href="#!" class="text-white">Products</a>
+        </h6>
+        </div>
+        <!-- Grid column -->
 
-    </footer>
+        <!-- Grid column -->
+        <div class="col-md-2">
+        <h6 class="text-uppercase font-weight-bold">
+            <a href="#!" class="text-white">Awards</a>
+        </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2">
+        <h6 class="text-uppercase font-weight-bold">
+            <a href="#!" class="text-white">Help</a>
+        </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2">
+        <h6 class="text-uppercase font-weight-bold">
+            <a href="#!" class="text-white">Contact</a>
+        </h6>
+        </div>
+        <!-- Grid column -->
+    </div>
+    <!-- Grid row-->
+    </section>
+    <!-- Section: Links -->
+
+    <hr class="my-5" />
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+    ©<?php echo date("Y"); ?>
+    Fantasy Reviews
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
 
 <?php wp_footer(); ?>
