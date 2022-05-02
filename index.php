@@ -18,7 +18,6 @@
 
         $loop = new WP_Query( array(
             'post_type' => 'review',
-            // 'posts_per_page' => 2,
             'paged' => $paged
         ) );
 
@@ -56,7 +55,7 @@
 
                     </div>
                 </div>
-        <?php endwhile; ?>
+            <?php endwhile; ?>
 </div>
 
 
