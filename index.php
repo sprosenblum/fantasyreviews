@@ -43,8 +43,8 @@
                                 </a>
                             </span>
 
-                                <!-- render author name onto page -->
-                            <p class="book-author mt-2 fs-5">
+                            <!-- render author name onto page -->
+                            <p class="book-author mt-2 fs-6">
                                 <?php echo get_post_meta($post->ID, 'author', true); ?>
                             </p>
 
