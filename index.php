@@ -58,9 +58,6 @@
             <?php endwhile; ?>
 </div>
 
-
-    <hr>
-
     <?php get_footer(); ?>
 
     </body>

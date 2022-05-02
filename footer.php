@@ -48,12 +48,7 @@
     </div>
     <!-- Grid row-->
     </section>
-    <!-- Section: Links -->
-
-    <hr class="my-5" />
 </div>
-<!-- Grid container -->
-
 <!-- Copyright -->
 <div
         class="text-center p-3"
