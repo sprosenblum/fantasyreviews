@@ -1,6 +1,4 @@
-<?php get_header();
-
-?>
+<?php get_header(); ?>
 
     <body>
         <h1 class="text-center mt-3">

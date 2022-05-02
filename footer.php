@@ -5,7 +5,7 @@
     <!-- Section: Links -->
     <section class="mt-5">
     <!-- Grid row-->
-    <div class="row text-center d-flex justify-content-center pt-5">
+    <div class="row text-center d-flex justify-content-center pt-4">
         <!-- Grid column -->
         <div class="col-md-2">
         <h6 class="font-weight-bold">
