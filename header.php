@@ -12,8 +12,9 @@
         <div class="container-fluid">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
 
@@ -39,6 +40,7 @@
                             /bookreviews/category-custom-page/?category=3
                             ">Adult
                     </a>
+
 
                     <form class="d-flex" method="get" action="<?php echo home_url( '/' ); ?>">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="s">
