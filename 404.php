@@ -24,4 +24,4 @@
         </div><!-- #content -->
     </div><!-- #primary -->
 
-<?php wp_footer(); ?>
+<?php get_footer(); ?>
