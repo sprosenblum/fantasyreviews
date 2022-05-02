@@ -9,14 +9,31 @@
         	<div class="col-md-4">
             	<h4>Menu</h4>
             	<div class="col-md-6">
-                    <ul class="pages">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Children</a></li>
-                        <li><a href="#">Young-Adult</a></li>
-                        <li><a href="#">Adult</a></lis>
-                    </ul>
-                </div>
 
+                    <a class="nav-link active" aria-current="page" href="
+                            <?php echo home_url(); ?>
+                            ">Home
+                    </a>
+
+                    <a class="nav-link active" href=
+                            "/bookreviews/category-custom-page/?category=4">
+                            Children
+                    </a>
+
+
+                    <a class="nav-link active" href=
+                            "/bookreviews/category-custom-page/?category=2">
+                            Young-Adult
+                    </a>
+
+
+                    <a class="nav-link active" href=
+                            "/bookreviews/category-custom-page/?category=3">
+                            Adult
+                    </a>
+
+
+                </div>
             </div>
         </div>
 

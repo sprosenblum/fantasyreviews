@@ -24,21 +24,21 @@
                     </a>
 
 
-                    <a class="nav-link active" href="
-                            /bookreviews/category-custom-page/?category=4
-                            ">Children
+                    <a class="nav-link active" href=
+                            "/bookreviews/category-custom-page/?category=4">
+                            Children
                     </a>
 
 
-                    <a class="nav-link active" href="
-                            /bookreviews/category-custom-page/?category=2
-                            ">Young-Adult
+                    <a class="nav-link active" href=
+                            "/bookreviews/category-custom-page/?category=2">
+                            Young-Adult
                     </a>
 
 
-                    <a class="nav-link active" href="
-                            /bookreviews/category-custom-page/?category=3
-                            ">Adult
+                    <a class="nav-link active" href=
+                            "/bookreviews/category-custom-page/?category=3">
+                            Adult
                     </a>
 
 

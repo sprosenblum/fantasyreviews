@@ -51,4 +51,4 @@ get_header();
     </main><!-- .site-main -->
 </div><!-- .content-area -->
 
-<?php wp_footer(); ?>
+<?php get_footer(); ?>
