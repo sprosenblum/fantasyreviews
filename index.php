@@ -24,11 +24,14 @@
 
                 <div class="row mb-5">
                     <div class="col-12 col-md-2 offset-md-1 d-flex flex-column align-items-center">
-                    <img
-                        class="book-img mb-2"
-                        src="<?php echo get_the_post_thumbnail_url(); ?>"
-                        alt="Book Image"
-                    />
+                        <!-- makes image link to the single post/review -->
+                        <a href="<?php the_permalink(); ?>">
+                            <img
+                                class="book-img mb-2"
+                                src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                alt="Book Image"
+                            />
+                        </a>
                     </div>
 
                     <div class="col-12 offset-md-1 col-md-6 text-center text-md-start">
