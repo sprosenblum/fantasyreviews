@@ -24,7 +24,7 @@
 
                 <div class="row mb-5">
                     <div class="col-12 col-md-2 offset-md-1 d-flex flex-column align-items-center">
-                        <!-- makes image link to the single post/review -->
+                        <!-- makes image link to the single post/review page -->
                         <a href="<?php the_permalink(); ?>">
                             <img
                                 class="book-img mb-2"

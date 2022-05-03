@@ -65,8 +65,6 @@
 
     endif; ?>
 
-    <hr>
-
 
     <?php get_footer(); ?>
 
