@@ -27,10 +27,6 @@ include_once('post-template.php');
 
     }
 
-
-
-    //bookRow($post);
-
     $args = array( 'category' => $categoryId, 'post_type' =>  'review' );
     $postslist = get_posts( $args );
 
