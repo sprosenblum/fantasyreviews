@@ -1,12 +1,12 @@
 <?php
 
-get_header();
-
-include_once('post-template.php');
-
 /**
 * Template Name: Category Custom Page
 */
+
+get_header();
+
+include_once('post-template.php');
 
 ?>
 
