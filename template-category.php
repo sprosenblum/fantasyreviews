@@ -57,8 +57,6 @@ get_header();
     endforeach;
     ?>
 
-    <hr>
-
 
     </main><!-- .site-main -->
 </div><!-- .content-area -->
