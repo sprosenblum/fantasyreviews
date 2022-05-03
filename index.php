@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+get_header();
+
+include_once('post-template.php');
+
+?>
 
     <body>
         <h1 class="text-center mt-3">
@@ -20,43 +25,11 @@
         ) );
 
 
-            while ( $loop->have_posts() ) : $loop->the_post(); ?>
+            while ( $loop->have_posts() ) : $loop->the_post();
 
-                <div class="row mb-5">
-                    <div class="col-12 col-md-2 offset-md-1 d-flex flex-column align-items-center">
-                        <!-- makes image link to the single post/review page -->
-                        <a href="<?php the_permalink(); ?>">
-                            <img
-                                class="book-img mb-2"
-                                src="<?php echo get_the_post_thumbnail_url(); ?>"
-                                alt="Book Image"
-                            />
-                        </a>
-                    </div>
+                bookRow($post);
 
-                    <div class="col-12 offset-md-1 col-md-6 text-center text-md-start">
-                        <h3 class="item-heading">
-
-                            <span class="book-item-name fs-3">
-                                <a href="<?php the_permalink(); ?>">
-                                <?php the_title(); ?>
-                                </a>
-                            </span>
-
-                            <!-- render author name onto page -->
-                            <p class="book-author mt-2 fs-6">
-                                <?php echo get_post_meta($post->ID, 'author', true); ?>
-                            </p>
-
-                        </h3>
-
-                        <p class="excerpt mt-3">
-                            <?php the_excerpt(); ?>
-                        </p>
-
-                    </div>
-                </div>
-            <?php endwhile; ?>
+            endwhile; ?>
 </div>
 
     <?php get_footer(); ?>

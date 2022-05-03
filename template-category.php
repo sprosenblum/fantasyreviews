@@ -2,6 +2,8 @@
 
 get_header();
 
+include_once('post-template.php');
+
 /**
 * Template Name: Category Custom Page
 */
@@ -27,33 +29,16 @@ get_header();
 
 
 
+    //bookRow($post);
+
     $args = array( 'category' => $categoryId, 'post_type' =>  'review' );
     $postslist = get_posts( $args );
 
-    foreach ($postslist as $post) :  setup_postdata($post); ?>
+    foreach ($postslist as $post) :  setup_postdata($post);
 
-        <!-- add styling -->
-        <div class="col-12 offset-md-1 col-md-6 text-center text-md-start">
-            <h3 class="item-heading mt-4">
-                <span class="book-item-name">
-                    <a href="<?php the_permalink(); ?>">
-                        <?php the_title(); ?>
-                    </a>
-                </span>
-
-                <p class="book-author mt-2 fs-6">
-                    <?php echo get_post_meta($post->ID, 'author', true); ?>
-                </p>
-            </h3>
+        bookRow($post);
 
 
-            <p class="mt-3">
-                <?php the_excerpt(); ?>
-            </p>
-
-        </div>
-
-    <?php
     endforeach;
     ?>
 
