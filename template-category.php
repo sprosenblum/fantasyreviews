@@ -11,7 +11,6 @@ get_header();
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-    <hr>
 
     <?php
 
@@ -34,13 +33,26 @@ get_header();
     foreach ($postslist as $post) :  setup_postdata($post); ?>
 
         <!-- add styling -->
-        <h2>
-            <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
-            </a>
-        </h2>
+        <div class="col-12 offset-md-1 col-md-6 text-center text-md-start">
+            <h3 class="item-heading mt-4">
+                <span class="book-item-name">
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_title(); ?>
+                    </a>
+                </span>
 
-        <?php the_excerpt(); ?>
+                <p class="book-author mt-2 fs-6">
+                    <?php echo get_post_meta($post->ID, 'author', true); ?>
+                </p>
+            </h3>
+
+
+            <p class="mt-3">
+                <?php the_excerpt(); ?>
+            </p>
+
+        </div>
+
     <?php
     endforeach;
     ?>
