@@ -5,11 +5,13 @@ function bookRow($post) { ?>
 
     <div class="row mb-5 mt-5">
         <div class="col-12 col-md-2 mt-4 offset-md-1 d-flex flex-column align-items-center">
-            <img
-                class="book-img mb-2"
-                src="<?php echo get_the_post_thumbnail_url(); ?>"
-                alt="Book Image"
-            />
+            <a href="<?php the_permalink(); ?>">
+                <img
+                    class="book-img mb-2"
+                    src="<?php echo get_the_post_thumbnail_url(); ?>"
+                    alt="Book Image"
+                />
+            </a>
         </div>
 
 
