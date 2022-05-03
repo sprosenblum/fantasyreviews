@@ -34,7 +34,7 @@
                     <div class="col-12 offset-md-1 col-md-6 text-center text-md-start">
                         <h3 class="item-heading">
 
-                            <span class="book-item-name">
+                            <span class="book-item-name fs-3">
                                 <a href="<?php the_permalink(); ?>">
                                 <?php the_title(); ?>
                                 </a>
