@@ -12,7 +12,7 @@ function bookRow($post) { ?>
             />
         </div>
 
-        <!-- add styling -->
+
         <div class="col-12 offset-md-1 col-md-6 text-center text-md-start">
             <h3 class="item-heading mt-4">
                 <span class="book-item-name">
@@ -25,14 +25,11 @@ function bookRow($post) { ?>
                     <?php echo get_post_meta($post->ID, 'author', true); ?>
                 </p>
             </h3>
-
-
             <p class="mt-3">
                 <?php the_excerpt(); ?>
             </p>
-
         </div>
-    </div> <!-- .row .mb-5 .mt-5 -->
 
+    </div> <!-- .row .mb-5 .mt-5 -->
 <?php
 }
