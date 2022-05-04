@@ -32,6 +32,7 @@ include_once('post-template.php');
 
     foreach ($postslist as $post) :  setup_postdata($post);
 
+        // from post-template.php
         bookRow($post);
 
 
