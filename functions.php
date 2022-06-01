@@ -13,15 +13,6 @@ function fantasyreviews_register_styles() {
 
     wp_enqueue_script('Bootstrap_with_Popper','https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js', array('jquery'), '', true);
 
-    // enqueue Bootstrap JS
-    wp_enqueue_script(
-        'Bootstrap_JS',
-        'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js',
-        array ( 'jquery' ),
-        '5.1.3',
-        true
-    );
-
 }
 
 add_action('wp_enqueue_scripts', 'fantasyreviews_register_styles');
