@@ -29,13 +29,13 @@
 
 
                     <a class="nav-link active" href=
-                            "/bookreviews/category-custom-page/?category=4">
+                            "/bookreviews/category-custom-page/?category=2">
                             Children
                     </a>
 
 
                     <a class="nav-link active" href=
-                            "/bookreviews/category-custom-page/?category=2">
+                            "/bookreviews/category-custom-page/?category=4">
                             Young-Adult
                     </a>
 
