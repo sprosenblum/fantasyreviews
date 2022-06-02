@@ -23,9 +23,7 @@
                         <h3 class="item-heading">
 
                             <span class="book-item-name">
-                                <a href="<?php the_permalink(); ?>">
-                                    <?php the_title(); ?>
-                                </a>
+                                <?php the_title(); ?>
                             </span>
 
                             <!-- render author name onto page -->
