@@ -23,4 +23,4 @@
 
 </div>
 
-<?php //get_footer(); ?>
+<!-- footer is printed on search.php -->
