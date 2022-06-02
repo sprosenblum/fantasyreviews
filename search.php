@@ -18,13 +18,13 @@
                 else :
                     echo '
                     <div class="no-content mt-3 text-center">
-                        <h3>Oops, looks like nothing matches your result.</h3>
+                        <h3>Oops, looks like nothing matches your search query.</h3>
                     </div>';
 
                 endif;
                 ?>
 
-                <a href="<?php echo home_url(); ?>" class="btn btn-dark">Return Home</a>
+                <a href="<?php echo home_url(); ?>" class="btn btn-dark mt-3">Return Home</a>
 
                     </div>
                 </div>
@@ -33,4 +33,4 @@
     </div>
 </div>
 
- <?php get_footer(); ?>
+<?php get_footer(); ?>
