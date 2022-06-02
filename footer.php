@@ -49,8 +49,9 @@
     class="text-center p-3"
     style="background-color: rgba(0, 0, 0, 0.2)"
     >
-    ©<?php echo date("Y"); ?>
-    Fantasy Reviews
+    <?php echo (new DateTime)->format('Y'); ?> &copy;
+    Fantasy Reviews - Site by
+      <a href="#" target="_blank">Sarah Rosenblum</a>
 </div>
 
 </footer>
