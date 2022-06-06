@@ -8,28 +8,28 @@
             <!-- Grid column -->
             <div class="col-md-2">
                 <h6 class="font-weight-bold">
-                    <a href="#!" class="text-white">Home</a>
+                    <a href="<?php echo home_url(); ?>" class="text-white">Home</a>
                 </h6>
             </div>
 
             <!-- Grid column -->
             <div class="col-md-2">
                 <h6 class="font-weight-bold">
-                    <a href="#!" class="text-white">Children</a>
+                    <a href="/bookreviews/category-custom-page/?category=2" class="text-white">Children</a>
                 </h6>
             </div>
 
         <!-- Grid column -->
             <div class="col-md-2">
                 <h6 class="font-weight-bold">
-                    <a href="#!" class="text-white">Young-Adult</a>
+                    <a href="/bookreviews/category-custom-page/?category=4" class="text-white">Young-Adult</a>
                 </h6>
             </div>
 
         <!-- Grid column -->
             <div class="col-md-2">
                 <h6 class="font-weight-bold">
-                    <a href="#!" class="text-white">Adult</a>
+                    <a href="/bookreviews/category-custom-page/?category=3" class="text-white">Adult</a>
                 </h6>
             </div>
 
